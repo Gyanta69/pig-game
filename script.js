@@ -23,6 +23,15 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
+const switchPlayer = function () {
+  // Switch to next player
+  currentScore = 0;
+  document.querySelector(`#current--${activePlayer}`).textContent = currentScore;
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  player0El.classList.toggle('player--active');
+  player1El.classList.toggle('player--active');
+};
+
 btnRoll.addEventListener('click', function () {
 
   // 1. Generate a random dice roll
@@ -63,5 +72,9 @@ btnHold.addEventListener('click', function () {
     currentScore = 0;
     player0El.classList.toggle('player--active');
     player1El.classList.toggle('player--active');
+
+
   }
+  //Switch current player
+  switchPlayer();
 });
