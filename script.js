@@ -48,3 +48,20 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
+btnHold.addEventListener('click', function () {
+  // 1. Add current score to active player's score
+  scores[activePlayer] += currentScore;
+  document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer];
+
+  // 2. Check if player's score is >= 100
+  if (scores[activePlayer] >= 100) {
+    // Finish the game
+    console.log(`Player ${activePlayer + 1} wins!`);
+  } else {
+    // Switch to next player
+    activePlayer = activePlayer === 0 ? 1 : 0;
+    currentScore = 0;
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
+  }
+});
