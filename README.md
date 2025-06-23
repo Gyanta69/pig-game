@@ -6,7 +6,7 @@ A Simple Dice Game
 
 Pig Game is a classic two-player dice game designed for quick and engaging entertainment. The objective of the game is to be the first player to reach a score of 100 points or more. This app aims to provide a straightforward and enjoyable gaming experience AND HELP YOU HAVE FUN.
 
-#Features
+# Features
 
 * Two-player gameplay
 * Dice rolling mechanics (roll, hold)
