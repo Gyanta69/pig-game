@@ -16,3 +16,7 @@ Pig Game is a classic two-player dice game designed for quick and engaging enter
 * Win condition (first to 100 points)
 * New game functionality to reset scores
 * Visual indication of active player and scores
+
+## Full feature documentation
+
+See the comprehensive feature guide in `docs/FEATURES.md`.
